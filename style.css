@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #F3E9E0;
+    color: #f2f2f2;
+    text-align: center;
+    overflow-x: hidden;
+
+}
+
+.noise {
+    position: fixed;
+    inset: 0;
+    background-image: url(../img/noise.png);
+    background-size: auto;
+    background-repeat: repeat;
+    mix-blend-mode: overlay;
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: 999;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    position: relative;
+}
+
+
+blockquote,
+p {
+    margin: 0;
+}
+
+#quoteText {
+    width: 670px;
+    height: 458px;
+    display: flex;
+    line-height: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #3B534A;
+}
+
+button {
+    position: absolute;
+    margin-top: 850px;
+    max-width: 260px;
+    padding: 10px 24px;
+    cursor: pointer;
+}
+
+
+.quote-btn {
+    font-family: poppins;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 36px;
+    font-weight: 300;
+    color: #3B534A;
+    letter-spacing: 3pt;
+    opacity: 60%;
+}
+
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* animation */
+
+#quoteText {
+    opacity: 1;
+    clip-path: inset(0 0 0% 0);
+}
+
+.quote-Counter {
+    position: absolute;
+    top: 150px;
+    font-family: poppins;
+    font-weight: 300;
+    color: #3B534A;
+    letter-spacing: 7pt;
+}
+
+.container {
+    position: relative;
+}
+
+.frame-oval {
+    opacity: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 382px;
+    height: 780px;
+    border: 1pt solid rgba(86, 130, 89, 0.70);
+    border-radius: 191px;
+    z-index: -1;
+}
+
+.cursor-orb {
+    position: fixed;
+    opacity: 50%;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ffb677, #ff6b9d, #6b7bff);
+    filter: blur(20px);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+/*  Bloobs */
+
+body {
+    overflow-x: hidden;
+}
+
+.blob {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(60px);
+    z-index: -2;
+    opacity: 90%;
+}
+
+.blob--orange {
+    width: 600px;
+    height: 600px;
+    top: 10%;
+    left: 15%;
+    background: radial-gradient(circle, #ffb677, transparent 90%);
+}
+
+.blob--pink {
+    width: 800px;
+    height: 800px;
+    top: 30%;
+    right: 10%;
+    background: radial-gradient(circle, #b495a8, transparent 90%);
+}
+
+.blob--blue {
+    width: 950px;
+    height: 950px;
+    bottom: 5%;
+    left: 25%;
+    background: radial-gradient(circle, #6F78BA, transparent 90%);
+}
